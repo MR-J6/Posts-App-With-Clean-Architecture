@@ -8,7 +8,7 @@ import 'package:posts_app/features/posts/data/models/post_model.dart';
 import 'package:posts_app/features/posts/domain/entities/post.dart';
 import 'package:posts_app/features/posts/domain/repositories/posts_repository.dart';
 
-typedef Future<Unit> DeleteOrUpdateOrAddPost();
+typedef DeleteOrUpdateOrAddPost = Future<Unit> Function();
 
 class PostsRepositoryImpl implements PostsRepository {
   final PostsRemoteDataSource remoteDataSource;
